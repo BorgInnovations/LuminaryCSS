@@ -1,2 +1,2 @@
 # MercuryCSS
-SPace Age inspired CSS library. Focused on efficient coding and clean aesthetics.
+Space Age inspired CSS library. Focused on efficient coding and clean aesthetics.
