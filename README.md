@@ -1,10 +1,10 @@
-# MercuryCSS
+# LuminaryCSS
 
 Space Age inspired CSS library. Focused on efficient coding and clean aesthetics.
 
 ---
 
-### MercuryCSS was inspired by the American astronauts and engineers of the Mercury and Apollo eras, but especially those behind Apollo 11 and 13.
+### LuminaryCSS was inspired by the American astronauts and engineers of the Mercury and Apollo eras, but especially those behind Apollo 11 and 13.
 
 Some time ago, I began reading the Apollo Command Module and Lunar Lander operating system code (I know, mega nerd), and I noticed something: hyper efficiency.
 
@@ -28,7 +28,7 @@ but my inspiration to build what I know is needed.
 
 Efficient, light software and systems.
 
-And thus, MercuryCSS was born.
+And thus, LuminaryCSS was born.
 
 ---
 
