@@ -3,9 +3,9 @@ Welcome to Mercury!
 An American Space-Age Inspired CSS Library!
 */
 
-@font-face { 
+@font-face {
     font-family: Fira_Code;
-    src: url("./Fira_Code/FiraCode-VariableFont_wght.ttf"); 
+    src: url("./Fira_Code/FiraCode-VariableFont_wght.ttf");
 
     /*
     Credit goes to tonsky on GitHub for creating the Fira Code font.
@@ -16,6 +16,61 @@ An American Space-Age Inspired CSS Library!
     */
 }
 
+@font-face {
+    font-family: Open_Sans;
+    src: url("https://fonts.borgcreative.com/Open_Sans/OpenSans-VariableFont_wdthwght.ttf");
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url("https://fonts.borgcreative.com/merriweather/Merriweather-RXwe.ttf");
+
+}
+
+@font-face {
+    font-family: Mechanical;
+    src: url("https://fonts.borgcreative.com/mechanical-font/Mechanical-g5Y5.otf");
+
+}
+
+@font-face {
+    font-family: OpenDyslexic;
+    src: url("https://fonts.borgcreative.com/OpenDyslexic/OpenDyslexic-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url("https://fonts.borgcreative.com/Oswald/Oswald-VariableFont_wght.ttf");
+
+}
+
+@font-face {
+    font-family: Liberation Sans;
+    src: url("https://fonts.borgcreative.com/liberation-sans-font/LiberationSans-BaDn.ttf");
+
+}
+
+@font-face {
+    font-family: Liberation Serif;
+    src: url("https://fonts.borgcreative.com/liberation-serif-font/LiberationSerif-wlR9.ttf");
+
+}
+
+@font-face {
+    font-family: Liberation Mono;
+    src: url("https://fonts.borgcreative.com/liberation-mono-font/LiberationMono-MW1v.ttf");
+
+}
+
+
+
+@property --luminary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #243743;
+    /*243743*/
+}
 
 @property --mercury {
     syntax: "<color>";
@@ -25,17 +80,25 @@ An American Space-Age Inspired CSS Library!
     /*var(--buzz)*/
 }
 
-@property --luminary {
+@property --mercurydark {
     syntax: "<color>";
     inherits: false;
-    initial-value: #243743;
-    /*243743*/
+    initial-value: #B9BBBE;
+    /*F6F9FD*/
+    /*var(--buzz)*/
 }
 
 @property --comanche {
     syntax: "<color>";
     inherits: false;
     initial-value: #F05126;
+    /*F05126*/
+}
+
+@property --comanchedark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #B53D1D;
     /*F05126*/
 }
 
@@ -46,6 +109,13 @@ An American Space-Age Inspired CSS Library!
     /*758ECD*/
 }
 
+@property --neildark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #586B9A;
+    /*758ECD*/
+}
+
 @property --buzz {
     syntax: "<color>";
     inherits: false;
@@ -53,10 +123,112 @@ An American Space-Age Inspired CSS Library!
     /*E0FF4F*/
 }
 
+@property --buzzdark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #A9C03B;
+    /*E0FF4F*/
+}
+
+/*
+We remember those brave astronauts horrifically lost on Apollo 1, Challenger, and Columbia.
+May the Lord have mercy on their souls
+*/
+
+
+/*
+January 28, 1986
+Space Shuttle Challenger and her crew were lost on launch due to a faulty O-ring.
+
+STS-51-L CREW
+Dick Scobee, commander
+Michael J. Smith, pilot
+Ronald McNair, mission specialist
+Ellison Onizuka, mission specialist
+Judith Resnik, mission specialist
+Gregory Jarvis, payload specialist
+Christa McAuliffe, payload specialist, teacher
+*/
+
+
+@property --challenger {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ED7B84;
+    /*#ED7B84*/
+}
+
+@property --challengerdark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #b65e66;
+    /*E0FF4F*/
+}
+
+/*
+
+February 1, 2003
+Space Shuttle Columbia broke up on reentry.
+
+STS-107 CREW
+Rick Husband, commander
+William C. McCool, pilot
+Michael P. Anderson, mission specialist
+Kalpana Chawla, mission specialist
+David M. Brown, mission specialist
+Laurel Clark, mission specialist
+Ilan Ramon, payload specialist
+*/
+
+
+@property --columbia {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #907AD6;
+    /*#907AD6*/
+}
+
+@property --columbiadark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #7563b0;
+    /*E0FF4F*/
+}
+
+/*
+January 27, 1967
+A fire broke out in the crew module during a launch rehearsal. Apollo 1 and her crew were lost.
+
+AS-204 CREW
+Gus Grissom
+Edward H. White II
+Roger B. Chaffee
+*/
+
+@property --gus {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #F4AC32;
+    /*#F4AC32*/
+}
+
+@property --gusdark {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #d2942b;
+    /*E0FF4F*/
+}
+
+
+
 
 #mercury {
     color: var(--mercury);
     border-color: var(--mercury);
+}
+
+#luminary {
+    color: var(--luminary);
 }
 
 #mercury-glow {
@@ -91,8 +263,51 @@ An American Space-Age Inspired CSS Library!
 }
 
 
+
+
+.mercury {
+    color: var(--mercury);
+    border-color: var(--mercury);
+}
+
+.luminary {
+    color: var(--luminary);
+}
+
+.mercury-glow {
+    box-shadow: 0px 0px 10px var(--mercury);
+}
+
+.comanche {
+    color: var(--comanche);
+    border-color: var(--comanche);
+}
+
+.comanche-glow {
+    box-shadow: 0px 0px 10px var(--comanche);
+}
+
+.neil {
+    color: var(--neil);
+    border-color: var(--neil);
+}
+
+.neil-glow {
+    box-shadow: 0px 0px 10px var(--neil);
+}
+
+.buzz {
+    color: var(--buzz);
+    border-color: var(--buzz);
+}
+
+.buzz-glow {
+    box-shadow: 0px 0px 10px var(--buzz);
+}
+
+
 /*Global*/
-html{
+html {
     font-family: Fira_Code;
     animation-duration: 0.01s;
     animation-name: textflicker;
@@ -102,10 +317,12 @@ html{
     color: var(--mercury);
     margin: 15px;
 }
-button{
+
+button {
     font-family: Fira_Code;
 }
-a{
+
+a {
     font-family: Fira_Code;
 }
 
@@ -121,7 +338,7 @@ a{
 
 .grid-container {
     display: grid;
-  }
+}
 
 .flex-container {
     display: flex;
@@ -139,26 +356,117 @@ a{
     border: var(--mercury);
     border-width: 1px;
     border-style: solid;
-  }
-  
-  .nav ul li {
+}
+
+.nav-alt ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: var(--luminary);
+    border-width: 1px;
+    border-style: solid;
+    background-color: var(--mercury);
+}
+
+.nav ul li {
     float: left;
-  }
-  
-  .nav ul li a {
+}
+
+.nav-alt ul li {
+    float: left;
+}
+
+.nav ul li a {
     display: block;
     color: var(--mercury);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  .nav ul li a:hover {
+}
+
+.nav-alt ul li a {
+    display: block;
+    color: var(--luminary);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
     background-color: var(--mercury);
     color: var(--luminary);
-  }
+}
 
-.nbus:hover{
+.nav-alt ul li a:hover {
+    background-color: var(--luminary);
+    color: var(--mercury);
+}
+
+.appMenu {
+    padding-top: 10px;
+    font-size: 30px;
+    position: fixed;
+    top: 30px;
+    left: 0px;
+
+}
+
+.toolMenu {
+    padding-top: 10px;
+    font-size: 30px;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+
+
+}
+
+#menuList {
+    background-color: var(--luminary);
+}
+
+#toolList {
+    background-color: var(--luminary);
+}
+
+
+.menuItem {
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+    text-align: center;
+    color: var(--mercury);
+    width: 30px;
+    height: 30px;
+    background-color: var(--luminary);
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    color: var(--luminary);
+    background-color: var(--mercury);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subMenuItem {
+    border-style: none;
+    margin: 3px;
+    text-align: center;
+    color: var(--mercury);
+    text-decoration: none;
+}
+
+.subMenuItem:hover {
+    color: var(--neil);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.nbus:hover {
     cursor: pointer;
 }
 
@@ -170,20 +478,41 @@ a{
     border-width: 1px;
 }
 
+.card-alt {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+}
+
 .card p {
     padding-top: 0px;
     margin-top: 0px;
 }
 
-.card-body h1,.card-body h2,.card-body h3,.card-body h4,.card-body h5,.card-body h6 {
+.card-body h1,
+.card-body h2,
+.card-body h3,
+.card-body h4,
+.card-body h5,
+.card-body h6 {
     padding-top: 0px;
     margin-top: 0px;
     text-decoration: underline;
 }
-.card-body{
+
+.card-body {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
+}
+
+.card-body-alt {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    background-color: var(--mercury);
+    color: var(--luminary);
 }
 
 
@@ -195,7 +524,63 @@ a{
     padding-right: 5px;
     text-align: center;
 }
-.card-heading h1,.card-heading h2,.card-heading h3,.card-heading h4,.card-heading h5,.card-heading h6 {
+
+.card-heading-neil {
+    background-color: var(--neil);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-heading-buzz {
+    background-color: var(--buzz);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-heading-comanche {
+    background-color: var(--comanche);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+
+
+.card-heading-columbia {
+    background-color: var(--columbia);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-heading-challenger {
+    background-color: var(--challenger);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-heading-gus {
+    background-color: var(--gus);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card-heading h1,
+.card-heading h2,
+.card-heading h3,
+.card-heading h4,
+.card-heading h5,
+.card-heading h6 {
     padding-top: 0px;
     margin-top: 0px;
     text-decoration: none;
@@ -204,18 +589,19 @@ a{
 /*Buttons*/
 
 .abus {
-    color: var(--mercury);
+    color: var(--mercurydark);
     background-color: var(--luminary);
     border-style: solid;
-    border-color: var(--mercury);
+    border-color: var(--mercurydark);
     border-width: 1px;
     padding: 5px;
-    opacity: 0.5;
+
+
 
 }
 
 .abus:hover {
-    
+
     color: var(--mercury);
     background-color: var(--luminary);
     border-style: solid;
@@ -226,19 +612,43 @@ a{
     cursor: pointer;
 }
 
-.obus {
-    color: var(--comanche);
-    background-color: var(--luminary);
+.lbus {
+    color: var(--luminary);
+    background-color: var(--mercury);
     border-style: solid;
-    border-color: var(--comanche);
+    border-color: var(--luminary);
     border-width: 1px;
     padding: 5px;
-    opacity: 0.5;
+
+
+
+}
+
+.lbus:hover {
+
+    color: var(--luminary);
+    background-color: var(--mercurydark);
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.obus {
+    color: var(--comanchedark);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--comanchedark);
+    border-width: 1px;
+    padding: 5px;
+
 
 }
 
 .obus:hover {
-    
+
     color: var(--comanche);
     background-color: var(--luminary);
     border-style: solid;
@@ -250,18 +660,18 @@ a{
 }
 
 .bbus {
-    color: var(--neil);
+    color: var(--neildark);
     background-color: var(--luminary);
     border-style: solid;
-    border-color: var(--neil);
+    border-color: var(--neildark);
     border-width: 1px;
     padding: 5px;
-    opacity: 0.5;
+
 
 }
 
 .bbus:hover {
-    
+
     color: var(--neil);
     background-color: var(--luminary);
     border-style: solid;
@@ -273,18 +683,18 @@ a{
 }
 
 .gbus {
-    color: var(--buzz);
+    color: var(--buzzdark);
     background-color: var(--luminary);
     border-style: solid;
-    border-color: var(--buzz);
+    border-color: var(--buzzdark);
     border-width: 1px;
     padding: 5px;
-    opacity: 0.5;
+
 
 }
 
 .gbus:hover {
-    
+
     color: var(--buzz);
     background-color: var(--luminary);
     border-style: solid;
@@ -295,23 +705,95 @@ a{
     cursor: pointer;
 }
 
-.topbus{
+.pbus {
+    color: var(--columbiadark);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--columbiadark);
+    border-width: 1px;
+    padding: 5px;
+
+
+}
+
+.pbus:hover {
+
+    color: var(--columbia);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--columbia);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.ybus {
+    color: var(--gusdark);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--gusdark);
+    border-width: 1px;
+    padding: 5px;
+
+
+}
+
+.ybus:hover {
+
+    color: var(--gus);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--gus);
+    border-width: 1px;
+    padding: 5px;
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.topbus {
     position: fixed;
     right: 10px;
     bottom: 10px;
+    color: var(--mercurydark);
+    background-color: var(--luminary);
+    border-style: solid;
+    border-color: var(--mercurydark);
+    border-width: 1px;
+    padding: 5px;
+
+}
+
+.topbus:hover {
+
     color: var(--mercury);
     background-color: var(--luminary);
     border-style: solid;
     border-color: var(--mercury);
     border-width: 1px;
     padding: 5px;
-    opacity: 0.5;
+    opacity: 1.0;
+    cursor: pointer;
 }
 
-.topbus:hover {
-    
+.bmc {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
     color: var(--mercury);
-    background-color: var(--luminary);
+    background-color: var(--mercurydark);
+    border-style: solid;
+    border-color: var(--mercury);
+    border-width: 1px;
+    padding: 5px;
+
+
+}
+
+.bmc:hover {
+
+    color: var(--mercury);
+    background-color: var(--mercury);
     border-style: solid;
     border-color: var(--mercury);
     border-width: 1px;
@@ -323,20 +805,19 @@ a{
 /*Table*/
 
 table {
-
     border-collapse: collapse;
+
 }
 
 td {
-    color: var(--mercury);
-    border-bottom: 1px solid var(--mercury);
+    border: 1px solid var(--mercury);
     text-align: left;
-}
-tr:hover {
-    background-color: var(--neil);
+    min-width: 75px;
 }
 
-th{
+
+
+th {
     background-color: var(--mercury);
     color: var(--luminary);
     padding-left: 5px;
@@ -346,7 +827,7 @@ th{
 }
 
 /*Inputs*/
-.text-input{
+.text-input {
     font-family: Fira_Code;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -357,14 +838,72 @@ th{
     background-color: var(--luminary);
 }
 
+.text-input-alt {
+    font-family: Fira_Code;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--luminary);
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+    background-color: var(--mercury);
+}
+
 
 
 /*misc*/
-.divider{
+.synapses {
+    border-style: solid;
+    border-color: var(--mercury);
+    color: var(--mercury);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--luminary);
+}
+
+.synapses:hover {
+    border-style: solid;
+    color: var(--luminary);
+    border-color: var(--mercury);
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--mercury);
+}
+
+.synapseheading {
+    background-color: var(--mercury);
+    color: var(--luminary);
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: max-content;
+}
+
+
+.si {
+    color: var(--mercury);
+    border-bottom: 1px solid var(--mercury);
+    text-align: left;
+    text-decoration: none;
+}
+
+.si:hover {
+    background-color: var(--neil);
+}
+
+ul {
+    list-style: none;
+}
+
+
+.divider {
     margin-top: 24px;
     margin-bottom: 24px;
-    opacity: 0.5;
-    color: var(--mercury);
+    color: var(--mercurydark);
     text-align: center;
     cursor: default;
 }
@@ -376,23 +915,74 @@ th{
     border-width: 1px;
 }
 
-.a{
+.border-alt {
+    margin: 15px;
+    border-style: solid;
+    border-color: var(--luminary);
+    border-width: 1px;
+}
+
+.a {
     padding-top: 0px;
     margin-top: 0px;
     text-decoration: underline;
     color: var(--mercury);
 }
 
-.a:hover{
+.a:hover {
     padding-top: 0px;
     margin-top: 0px;
     text-decoration: underline;
     color: var(--neil);
 }
 
+.a-alt {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--luminary);
+}
+
+.a-alt:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--neil);
+}
+
+.a-comanche {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: var(--comanche);
+}
+
+.a-comanche:hover {
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: underline;
+    color: #d37257;
+}
+
+
+
 .cols-3 {
     column-count: 3;
-  }
+}
+
+.pdo-1 {
+    filter: blur(0.1px);
+}
+
+.pdo-2 {
+    filter: blur(0.2px);
+}
+
+.pdo-3 {
+    filter: blur(0.3px);
+}
+
+
 
 /*
 @keyframes textflicker {
